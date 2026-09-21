@@ -3,7 +3,7 @@
 Single-page portfolio for Rocío León (production direction, assistant direction, art direction).
 Vite + React + TypeScript + MUI, bilingual EN/ES.
 
-**Live:** https://saeed99madi.github.io/rocio-leon-portfolio/
+**Live:** https://rocio-leon.github.io/
 
 ```bash
 npm install
