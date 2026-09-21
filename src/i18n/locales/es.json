@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "title": "Rocío León — Creativa · Dirección de Producción",
+    "description": "Rocío León — dirección de producción, ayudantía de dirección y dirección de arte para proyectos audiovisuales. Actriz, traductora e intérprete con base en Madrid.",
+    "langName": "Español",
+    "switchTo": "Switch to English",
+    "switchLabel": "EN"
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "work": "Trayectoria",
+    "credits": "Créditos",
+    "craft": "Herramientas",
+    "contact": "Contacto",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "language": "Idioma",
+    "skipToContent": "Saltar al contenido"
+  },
+  "hero": {
+    "location": "Madrid, España",
+    "role": "Creativa",
+    "headline": "Dirección de producción, ayudantía de dirección y dirección de arte — del primer desglose al etalonaje final.",
+    "scroll": "Desliza",
+    "portraitAlt": "Retrato de Rocío León",
+    "tags": [
+      "Dirección de Producción",
+      "Ayudantía de Dirección",
+      "Dirección de Arte",
+      "Actriz"
+    ]
+  },
+  "marquee": {
+    "words": [
+      "Dirección de Producción",
+      "Assistant Direction",
+      "Dirección de Arte",
+      "Actress",
+      "Estrategia Creativa",
+      "Theatre Translation"
+    ]
+  },
+  "about": {
+    "kicker": "Sobre mí",
+    "title": "Una visión amplia del proceso audiovisual y un sentido afinado de la estética.",
+    "paragraphs": [
+      "Profesional del sector audiovisual con experiencia en dirección de producción, ayudantía de dirección y dirección de arte. Lidero proyectos con eficacia y criterio creativo, con una sólida formación en Arte Dramático y una larga trayectoria como actriz.",
+      "También colaboro creativamente en campañas de redes sociales para causas humanitarias, utilizando plataformas digitales para sensibilizar, conectar con el público y generar impacto social. Esa doble perspectiva —delante y detrás de la cámara— se traduce en una comunicación clara en entornos internacionales."
+    ],
+    "stats": [
+      {
+        "value": "20+",
+        "label": "Años en set y escena"
+      },
+      {
+        "value": "3",
+        "label": "Idiomas de trabajo"
+      },
+      {
+        "value": "4",
+        "label": "Disciplinas dirigidas"
+      }
+    ],
+    "educationTitle": "Formación",
+    "degree": "Título Superior en Arte Dramático",
+    "school": "Real Escuela Superior de Arte Dramático (RESAD)"
+  },
+  "work": {
+    "kicker": "Trayectoria",
+    "title": "Experiencia",
+    "roles": [
+      {
+        "period": "2025 — Actualidad",
+        "title": "Colaboración creativa en estrategia y contenido de redes sociales",
+        "note": "Campañas para causas humanitarias: sensibilización, conexión con la audiencia e impacto social en plataformas digitales.",
+        "bullets": []
+      },
+      {
+        "period": "2024 — Actualidad",
+        "title": "Directora de Producción y Ayudante de Dirección",
+        "org": "La Corte — programa online",
+        "bullets": [
+          "Gestión de producción, logística de rodaje y postproducción.",
+          "Coordinación y gestión de equipo técnico y artístico.",
+          "Ayudantía de dirección y gestión de reparto.",
+          "Codirección de arte y supervisión estética."
+        ]
+      },
+      {
+        "period": "2004 — Actualidad",
+        "title": "Actriz",
+        "org": "Netflix · Tele5 · RTVE · Teatro Nacional",
+        "note": "Series y largometrajes para las principales cadenas y plataformas españolas, además de temporadas en el Teatro Nacional.",
+        "bullets": []
+      },
+      {
+        "period": "2010 — Actualidad",
+        "title": "Guía e Intérprete",
+        "bullets": [
+          "Interpretación simultánea inglés/español — incluido el Festival de Almagro.",
+          "Coordinación de visitas culturales e institucionales."
+        ]
+      },
+      {
+        "period": "2006 — Actualidad",
+        "title": "Traductora",
+        "note": "Traducción teatral al español, incluidas Via Dolorosa (David Hare) e Ice-Cream (Caryl Churchill).",
+        "bullets": []
+      }
+    ]
+  },
+  "credits": {
+    "kicker": "En pantalla y en escena",
+    "title": "Créditos seleccionados",
+    "items": [
+      {
+        "title": "Loco por Ella",
+        "network": "Netflix",
+        "kind": "Largometraje"
+      },
+      {
+        "title": "Valeria",
+        "network": "Netflix",
+        "kind": "Serie"
+      },
+      {
+        "title": "María y los demás",
+        "network": "RTVE",
+        "kind": "Largometraje"
+      },
+      {
+        "title": "Todas las veces que nos enamoramos",
+        "network": "Tele5",
+        "kind": "Largometraje"
+      },
+      {
+        "title": "Teatro Nacional",
+        "network": "CNTC",
+        "kind": "Temporadas en escena"
+      },
+      {
+        "title": "Via Dolorosa · Ice-Cream",
+        "network": "Hare · Churchill",
+        "kind": "Traducción teatral"
+      }
+    ]
+  },
+  "craft": {
+    "kicker": "Herramientas",
+    "title": "Lo que aporto a un rodaje",
+    "items": [
+      {
+        "title": "Dirección de producción",
+        "body": "Presupuestos, planificación, logística de rodaje y post — a tiempo y fieles al encargo, sin perder la idea."
+      },
+      {
+        "title": "Ayudantía de dirección",
+        "body": "Coordinación de equipo y reparto, órdenes de trabajo, continuidad — el centro tranquilo del set."
+      },
+      {
+        "title": "Dirección de arte",
+        "body": "Supervisión estética, referencias y construcción de mundo, con ojo de actriz para lo que dice el plano."
+      },
+      {
+        "title": "Creatividad y social",
+        "body": "Conceptos y contenido para campañas con causa — pensados para verse, compartirse y movilizar."
+      }
+    ],
+    "languagesTitle": "Idiomas",
+    "languages": [
+      {
+        "name": "Español",
+        "level": "Nativo"
+      },
+      {
+        "name": "Inglés",
+        "level": "Bilingüe"
+      },
+      {
+        "name": "Francés",
+        "level": "Conversacional"
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Contacto",
+    "title": "Hagamos algo juntos.",
+    "body": "Disponible para dirección de producción, ayudantía de dirección, dirección de arte y colaboración creativa — en España e internacionalmente.",
+    "callLabel": "Llamar",
+    "basedLabel": "Con base en",
+    "location": "Madrid, España",
+    "whatsappLabel": "WhatsApp",
+    "whatsappMessage": "Hola Rocío, he visto tu portfolio y me gustaría hablar de un proyecto.",
+    "emailLabel": "Email"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "toTop": "Arriba"
+  }
+}

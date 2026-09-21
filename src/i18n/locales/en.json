@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "title": "Rocío León — Creative · Production Director",
+    "description": "Rocío León — production direction, assistant direction and art direction for audiovisual projects. Actress, translator and interpreter based in Madrid.",
+    "langName": "English",
+    "switchTo": "Cambiar a español",
+    "switchLabel": "ES"
+  },
+  "nav": {
+    "about": "About",
+    "work": "Work",
+    "credits": "Credits",
+    "craft": "Toolkit",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "skipToContent": "Skip to content"
+  },
+  "hero": {
+    "location": "Madrid, Spain",
+    "role": "Creative",
+    "headline": "Production direction, assistant direction and art direction — from the first breakdown to the final grade.",
+    "scroll": "Scroll",
+    "portraitAlt": "Portrait of Rocío León",
+    "tags": [
+      "Production Direction",
+      "Assistant Direction",
+      "Art Direction",
+      "Actress"
+    ]
+  },
+  "marquee": {
+    "words": [
+      "Production Direction",
+      "Ayudantía de Dirección",
+      "Art Direction",
+      "Actriz",
+      "Creative Strategy",
+      "Traducción Teatral"
+    ]
+  },
+  "about": {
+    "kicker": "About",
+    "title": "A broad view of the audiovisual process, a refined sense of aesthetics.",
+    "paragraphs": [
+      "Professional in the audiovisual field with experience in production direction, assistant direction and art direction. I lead projects efficiently and creatively, with a strong background in Dramatic Arts and extensive experience as an actress.",
+      "I also collaborate creatively on social media campaigns for humanitarian causes, using digital platforms to raise awareness, engage audiences and drive social impact. That double perspective — in front of the camera and behind it — makes for clear communication in international environments."
+    ],
+    "stats": [
+      {
+        "value": "20+",
+        "label": "Years on set & stage"
+      },
+      {
+        "value": "3",
+        "label": "Working languages"
+      },
+      {
+        "value": "4",
+        "label": "Disciplines led"
+      }
+    ],
+    "educationTitle": "Education",
+    "degree": "Bachelor's Degree in Dramatic Arts",
+    "school": "Real Escuela Superior de Arte Dramático (RESAD)"
+  },
+  "work": {
+    "kicker": "Trajectory",
+    "title": "Work Experience",
+    "roles": [
+      {
+        "period": "2025 — Present",
+        "title": "Creative collaboration in social media strategy and content",
+        "note": "Campaigns for humanitarian causes: awareness, audience engagement and social impact across digital platforms.",
+        "bullets": []
+      },
+      {
+        "period": "2024 — Present",
+        "title": "Production Director & Assistant Director",
+        "org": "La Corte — online show",
+        "bullets": [
+          "Management of production, filming logistics and post-production.",
+          "Team coordination and management of technical and artistic crew.",
+          "Assistant direction and cast management.",
+          "Co-Art Director & aesthetic supervisor."
+        ]
+      },
+      {
+        "period": "2004 — Present",
+        "title": "Actress",
+        "org": "Netflix · Tele5 · RTVE · Teatro Nacional",
+        "note": "Series and feature work for major Spanish broadcasters and platforms, alongside seasons with the Spanish National Theatre.",
+        "bullets": []
+      },
+      {
+        "period": "2010 — Present",
+        "title": "Guide and Interpreter",
+        "bullets": [
+          "Simultaneous English/Spanish interpreting — including the Almagro Festival.",
+          "Coordination of cultural tours and institutional visits."
+        ]
+      },
+      {
+        "period": "2006 — Present",
+        "title": "Translator",
+        "note": "Theatre translation into Spanish, including Via Dolorosa (David Hare) and Ice-Cream (Caryl Churchill).",
+        "bullets": []
+      }
+    ]
+  },
+  "credits": {
+    "kicker": "On screen & on stage",
+    "title": "Selected Credits",
+    "items": [
+      {
+        "title": "Loco por Ella",
+        "network": "Netflix",
+        "kind": "Feature film"
+      },
+      {
+        "title": "Valeria",
+        "network": "Netflix",
+        "kind": "Series"
+      },
+      {
+        "title": "María y los demás",
+        "network": "RTVE",
+        "kind": "Feature film"
+      },
+      {
+        "title": "Todas las veces que nos enamoramos",
+        "network": "Tele5",
+        "kind": "Feature film"
+      },
+      {
+        "title": "Spanish National Theatre",
+        "network": "CNTC",
+        "kind": "Stage seasons"
+      },
+      {
+        "title": "Via Dolorosa · Ice-Cream",
+        "network": "Hare · Churchill",
+        "kind": "Theatre translation"
+      }
+    ]
+  },
+  "craft": {
+    "kicker": "Toolkit",
+    "title": "What I bring to a set",
+    "items": [
+      {
+        "title": "Production Direction",
+        "body": "Budgets, schedules, filming logistics and post — kept on time and on brief, without losing the idea."
+      },
+      {
+        "title": "Assistant Direction",
+        "body": "Crew and cast coordination, call sheets, continuity — the calm centre of a working set."
+      },
+      {
+        "title": "Art Direction",
+        "body": "Aesthetic supervision, references and world-building, with an actor's eye for what the frame says."
+      },
+      {
+        "title": "Creative & Social",
+        "body": "Concepts and content for campaigns with a cause — written to be watched, shared and acted on."
+      }
+    ],
+    "languagesTitle": "Languages",
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "Native"
+      },
+      {
+        "name": "English",
+        "level": "Bilingual"
+      },
+      {
+        "name": "French",
+        "level": "Conversational"
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Let's make something.",
+    "body": "Available for production direction, assistant direction, art direction and creative collaboration — in Spain and internationally.",
+    "callLabel": "Call",
+    "basedLabel": "Based in",
+    "location": "Madrid, Spain",
+    "whatsappLabel": "WhatsApp",
+    "whatsappMessage": "Hi Rocío, I saw your portfolio and I'd like to talk about a project.",
+    "emailLabel": "Email"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "toTop": "Top"
+  }
+}
