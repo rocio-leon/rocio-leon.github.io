@@ -1,5 +1,5 @@
 {
-  "name": "rocio",
+  "name": "rocio-leon-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "fonts:fetch": "node scripts/fetch-fonts.mjs",
+    "licenses": "npx --yes license-checker-rseidelsohn --production --summary",
+    "audit": "npm audit --omit=dev",
+    "typecheck": "tsc -b --force"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -29,5 +33,7 @@
     "oxlint": "^1.81.0",
     "typescript": "~6.0.2",
     "vite": "^8.3.0"
-  }
+  },
+  "description": "Portfolio for Roc\u00edo Le\u00f3n \u2014 production direction, assistant direction, art direction.",
+  "license": "MIT"
 }

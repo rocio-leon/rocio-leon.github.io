@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saeed99madi.github.io/rocio-leon-portfolio/sitemap.xml

@@ -2,25 +2,118 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#FBFAF8" />
+
+    <!--
+      Content-Security-Policy is delivered as a meta tag because GitHub Pages
+      cannot set response headers. If this ever moves to a host that can
+      (Netlify, Cloudflare), move this to a real header and add
+      frame-ancestors + X-Content-Type-Options, which meta tags cannot express.
+
+      style-src needs 'unsafe-inline': Emotion (MUI's styling engine) injects
+      <style> elements at runtime, and a static host cannot mint per-request
+      nonces. img-src needs data: for the inline SVG paper-grain texture.
+      No third-party origin is allowed at all — fonts are self-hosted.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               script-src 'self';
+               style-src 'self' 'unsafe-inline';
+               img-src 'self' data:;
+               font-src 'self';
+               connect-src 'self';
+               form-action 'none';
+               base-uri 'self';
+               object-src 'none';
+               frame-src 'none';
+               manifest-src 'self';
+               upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
     <title>Rocío León — Creative · Production Director</title>
-    <meta name="description" content="Rocío León — production direction, assistant direction and art direction for audiovisual projects. Actress, translator and interpreter based in Madrid." />
+    <meta
+      name="description"
+      content="Rocío León — production direction, assistant direction and art direction for audiovisual projects. Actress, translator and interpreter based in Madrid."
+    />
+    <meta name="author" content="Rocío León" />
+    <link rel="canonical" href="https://saeed99madi.github.io/rocio-leon-portfolio/" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Rocío León" />
     <meta property="og:title" content="Rocío León — Creative" />
-    <meta property="og:description" content="Production direction, assistant direction and art direction. Madrid." />
-    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Production direction, assistant direction and art direction. Madrid."
+    />
+    <meta property="og:url" content="https://saeed99madi.github.io/rocio-leon-portfolio/" />
+    <meta property="og:image" content="https://saeed99madi.github.io/rocio-leon-portfolio/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Rocío León — Creative, Madrid" />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:locale:alternate" content="es_ES" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="theme-color" content="#FBFAF8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121214" media="(prefers-color-scheme: dark)" />
+
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!--
+      Self-hosted fonts. Relative hrefs so the site works under any base path.
+      The two latin faces are preloaded because they paint the hero; the
+      latin-ext and italic faces load on demand via their unicode-range.
+    -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="./fonts/bodoni-moda-normal-400-600-latin.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="./fonts/jost-normal-300-600-latin.woff2" />
+    <link rel="stylesheet" href="./fonts.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rocío León",
+        "jobTitle": "Production Director, Assistant Director, Art Director",
+        "email": "mailto:rrocioleonn@gmail.com",
+        "telephone": "+34625208458",
+        "url": "https://saeed99madi.github.io/rocio-leon-portfolio/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Madrid",
+          "addressCountry": "ES"
+        },
+        "knowsLanguage": ["es", "en", "fr"],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Real Escuela Superior de Arte Dramático (RESAD)"
+        },
+        "knowsAbout": [
+          "Production direction",
+          "Assistant direction",
+          "Art direction",
+          "Acting",
+          "Theatre translation"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <div style="padding: 2rem; font-family: system-ui, sans-serif; line-height: 1.6">
+        <h1>Rocío León — Creative</h1>
+        <p>Production direction, assistant direction and art direction. Madrid, Spain.</p>
+        <p>
+          Email <a href="mailto:rrocioleonn@gmail.com">rrocioleonn@gmail.com</a> · Phone
+          <a href="tel:+34625208458">+34 625 208 458</a>
+        </p>
+        <p>This portfolio needs JavaScript enabled to display in full.</p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
