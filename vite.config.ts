@@ -1,5 +1,6 @@
 import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
+import { siteFiles } from './scripts/site-files.ts'
 
 const VENDOR_CHUNKS: Record<string, string[]> = {
   react: ['/node_modules/react/', '/node_modules/react-dom/', '/node_modules/scheduler/'],
@@ -9,22 +10,27 @@ const VENDOR_CHUNKS: Record<string, string[]> = {
 }
 
 // https://vite.dev/config/
-export default defineConfig(({ command }) => ({
-  // GitHub Pages serves this from /<repo>/. Hosts that serve from the domain
-  // root (Netlify, Vercel, Cloudflare Pages) set BASE_PATH=/ instead.
-  base: command === 'build' ? (process.env.BASE_PATH ?? '/rocio-leon-portfolio/') : '/',
-  plugins: [react()],
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          const path = id.split('?')[0].replace(/\\/g, '/')
-          for (const [chunk, matchers] of Object.entries(VENDOR_CHUNKS)) {
-            if (matchers.some((m) => path.includes(m))) return chunk
-          }
-          return undefined
+export default defineConfig(({ command, mode }) => {
+  const env = loadEnv(mode, process.cwd(), '')
+  const siteUrl = env.VITE_SITE_URL ?? 'http://localhost:5173/'
+
+  return {
+    // GitHub Pages serves this from /<repo>/. Hosts that serve from the
+    // domain root (Netlify, Vercel, Cloudflare Pages) set BASE_PATH=/ instead.
+    base: command === 'build' ? (env.BASE_PATH ?? '/') : '/',
+    plugins: [react(), siteFiles({ siteUrl, languages: ['en', 'es'] })],
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            const path = id.split('?')[0].replace(/\\/g, '/')
+            for (const [chunk, matchers] of Object.entries(VENDOR_CHUNKS)) {
+              if (matchers.some((m) => path.includes(m))) return chunk
+            }
+            return undefined
+          },
         },
       },
     },
-  },
-}))
+  }
+})

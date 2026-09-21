@@ -25,6 +25,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          # Keep these in sync with .env. Change both when the site moves host.
+          VITE_SITE_URL: https://saeed99madi.github.io/rocio-leon-portfolio/
+          BASE_PATH: /rocio-leon-portfolio/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
