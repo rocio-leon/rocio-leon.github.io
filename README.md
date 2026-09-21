@@ -31,6 +31,22 @@ or the build will fail the typecheck (English is the source of truth for types).
 To change a job, a credit, a skill: edit the matching array in both JSON files.
 Arrays pair positionally, so keep the same order in both languages.
 
+### The locale checker
+
+`npm run check:locales` runs as part of `npm run build` and in CI, so a broken or
+half-finished translation cannot reach production. It verifies that both files have
+the same keys and array lengths, that no string is empty or has stray whitespace,
+that `{{placeholders}}` match, that nothing was left untranslated, and that Spanish
+conjunctions follow the euphony rules:
+
+- **y → e** before a word whose *sound* starts with /i/ (`dirección e interpretación`).
+- **o → u** before a word whose sound starts with /o/ (`siete u ocho`).
+
+The rule is about pronunciation, not spelling, so the checker knows two exceptions:
+`hie-`/`hia-` words keep **y** (`agua y hielo`, sound /je/), and foreign words spelled
+with `i-` but not pronounced /i/ keep **y** too — which is why
+`Via Dolorosa (David Hare) y Ice-Cream` is correct: *Ice* is /ais/, opening on /a/.
+
 The three language proficiency bars read their percentages from `languageLevels`
 in [src/config.ts](src/config.ts), matched by position to `craft.languages`.
 

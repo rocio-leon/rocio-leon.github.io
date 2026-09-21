@@ -24,6 +24,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm run lint
+      - run: npm run check:locales
       - run: npm run build
         env:
           # Keep these in sync with .env. Change both when the site moves host.

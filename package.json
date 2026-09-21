@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run check:locales && tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
     "fonts:fetch": "node scripts/fetch-fonts.mjs",
     "licenses": "npx --yes license-checker-rseidelsohn --production --summary",
     "audit": "npm audit --omit=dev",
-    "typecheck": "tsc -b --force"
+    "typecheck": "tsc -b --force",
+    "check:locales": "node scripts/check-locales.mjs"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

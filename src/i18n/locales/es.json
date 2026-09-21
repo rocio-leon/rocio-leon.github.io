@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Rocío León — Creativa · Dirección de Producción",
+    "title": "Rocío León — Creativa · Directora de Producción",
     "description": "Rocío León — dirección de producción, ayudantía de dirección y dirección de arte para proyectos audiovisuales. Actriz, traductora e intérprete con base en Madrid.",
     "langName": "Español",
     "switchTo": "Switch to English",
@@ -21,22 +21,22 @@
     "location": "Madrid, España",
     "role": "Creativa",
     "headline": "Dirección de producción, ayudantía de dirección y dirección de arte — del primer desglose al etalonaje final.",
-    "scroll": "Desliza",
+    "scroll": "Desplázate",
     "portraitAlt": "Retrato de Rocío León",
     "tags": [
-      "Dirección de Producción",
-      "Ayudantía de Dirección",
-      "Dirección de Arte",
+      "Dirección de producción",
+      "Ayudantía de dirección",
+      "Dirección de arte",
       "Actriz"
     ]
   },
   "marquee": {
     "words": [
-      "Dirección de Producción",
+      "Dirección de producción",
       "Assistant Direction",
-      "Dirección de Arte",
+      "Dirección de arte",
       "Actress",
-      "Estrategia Creativa",
+      "Estrategia creativa",
       "Theatre Translation"
     ]
   },
@@ -50,7 +50,7 @@
     "stats": [
       {
         "value": "20+",
-        "label": "Años en set y escena"
+        "label": "Años en rodaje y escena"
       },
       {
         "value": "3",
@@ -77,7 +77,7 @@
       },
       {
         "period": "2024 — Actualidad",
-        "title": "Directora de Producción y Ayudante de Dirección",
+        "title": "Directora de producción y ayudante de dirección",
         "org": "La Corte — programa online",
         "bullets": [
           "Gestión de producción, logística de rodaje y postproducción.",
@@ -95,7 +95,7 @@
       },
       {
         "period": "2010 — Actualidad",
-        "title": "Guía e Intérprete",
+        "title": "Guía e intérprete",
         "bullets": [
           "Interpretación simultánea inglés/español — incluido el Festival de Almagro.",
           "Coordinación de visitas culturales e institucionales."
@@ -104,7 +104,7 @@
       {
         "period": "2006 — Actualidad",
         "title": "Traductora",
-        "note": "Traducción teatral al español, incluidas Via Dolorosa (David Hare) e Ice-Cream (Caryl Churchill).",
+        "note": "Traducción teatral al español, incluidas Via Dolorosa (David Hare) y Ice-Cream (Caryl Churchill).",
         "bullets": []
       }
     ]
@@ -135,7 +135,7 @@
       },
       {
         "title": "Teatro Nacional",
-        "network": "CNTC",
+        "network": "Madrid, España",
         "kind": "Temporadas en escena"
       },
       {
@@ -162,7 +162,7 @@
         "body": "Supervisión estética, referencias y construcción de mundo, con ojo de actriz para lo que dice el plano."
       },
       {
-        "title": "Creatividad y social",
+        "title": "Creatividad y redes sociales",
         "body": "Conceptos y contenido para campañas con causa — pensados para verse, compartirse y movilizar."
       }
     ],
@@ -190,7 +190,7 @@
     "basedLabel": "Con base en",
     "location": "Madrid, España",
     "whatsappLabel": "WhatsApp",
-    "whatsappMessage": "Hola Rocío, he visto tu portfolio y me gustaría hablar de un proyecto.",
+    "whatsappMessage": "Hola Rocío, he visto tu web y me gustaría hablar de un proyecto.",
     "emailLabel": "Email"
   },
   "footer": {
