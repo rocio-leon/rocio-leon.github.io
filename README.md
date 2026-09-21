@@ -3,6 +3,8 @@
 Single-page portfolio for Rocío León (production direction, assistant direction, art direction).
 Vite + React + TypeScript + MUI, bilingual EN/ES.
 
+**Live:** https://saeed99madi.github.io/rocio-leon-portfolio/
+
 ```bash
 npm install
 npm run dev      # http://localhost:5173
@@ -86,7 +88,72 @@ soft on large screens. **Drop in a higher-resolution portrait at the same 324:44
 aspect ratio** (or update `aspectRatio` in [src/components/Hero.tsx](src/components/Hero.tsx)).
 Around 900×1200 would be ideal.
 
+## Security
+
+- **Content-Security-Policy** is set via a meta tag in `index.html` and allows
+  **no third-party origin at all**. `style-src` keeps `'unsafe-inline'` because Emotion
+  (MUI's styling engine) injects `<style>` elements at runtime and a static host cannot
+  mint per-request nonces; `img-src` keeps `data:` for the inline SVG paper grain.
+  If this moves to a host that can set real headers (Netlify, Cloudflare), move the CSP
+  to a response header and add `frame-ancestors` and `X-Content-Type-Options`, which
+  meta tags cannot express.
+- **Fonts are self-hosted** in `public/fonts`. Hotlinking Google Fonts sends every
+  visitor's IP address to Google, which EU courts have treated as a GDPR violation —
+  relevant for a Madrid-based freelancer. Regenerate with `npm run fonts:fetch`.
+- **No analytics, no cookies, no third-party scripts.** Nothing to consent to, so there
+  is no cookie banner. `localStorage` holds one key (`rl-lang`) and never leaves the browser.
+- External links carry `rel="noopener noreferrer"`.
+- `npm run audit` checks production dependencies. Dependabot opens grouped monthly PRs.
+- An error boundary catches render crashes and still shows Rocío's contact details,
+  using dependency-free inline markup so it works even if the theme or i18n layer broke.
+
+## Licensing
+
+Three different licences apply — see [NOTICE.md](NOTICE.md) before reusing anything.
+
+| Material | Licence |
+|---|---|
+| Source code | MIT ([LICENSE](LICENSE)) |
+| Rocío's photo, biography, credits, contact details | © Rocío León, all rights reserved |
+| Bodoni Moda, Jost | SIL OFL 1.1 ([public/fonts/OFL.txt](public/fonts/OFL.txt)) |
+| Dependencies | MIT — run `npm run licenses` |
+
+**Forking this as a template?** Delete `src/assets/rocio.png`, `public/og.png` and
+replace the locale content. The code is yours to reuse; her likeness and personal
+data are not.
+
 ## Deploying
 
-`npm run build` produces a fully static `dist/`. It can be served from any static host
-(Netlify, Vercel, GitHub Pages, Railway static). No server, no environment variables.
+`npm run build` produces a fully static `dist/` — no server, no runtime secrets.
+Pushing to `main` deploys to GitHub Pages via [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+
+The deployed URL lives in **one place**: `VITE_SITE_URL`. `index.html` interpolates it,
+and `scripts/site-files.ts` generates `robots.txt` and the hreflang `sitemap.xml` from
+it at build time.
+
+### Moving to another host
+
+1. Edit `.env`:
+   - `VITE_SITE_URL` — the new public URL, with a trailing slash.
+   - `BASE_PATH` — `/` for any host serving from a domain root (Netlify, Vercel,
+     Cloudflare Pages, a custom domain); `/<repo>/` for a GitHub Pages project site.
+2. Mirror both values in the `env:` block of the deploy workflow.
+3. Regenerate the share image if the wording changes (see below).
+
+Nothing else references the domain.
+
+### Regenerating the share image
+
+`public/og.png` is the 1200x630 card that WhatsApp, LinkedIn and Slack show when the
+link is shared. It was rendered from a standalone HTML template; if Rocío's photo or
+title changes, re-render it at 1200x630 and keep it under ~300 KB — WhatsApp silently
+skips larger images.
+
+## Accessibility
+
+- Skip link, landmark regions, and `aria-labelledby` on every section.
+- Language proficiency bars expose `role="meter"` with `aria-valuetext`.
+- `prefers-reduced-motion` is respected: reveals fade without movement, the marquee stops.
+- Touch targets are at least 48px on the mobile action bar.
+- Colour contrast: display type is set at weight 500+ because the didone's hairlines
+  break up at 400, and the stat numerals deliberately use the sans for the same reason.
